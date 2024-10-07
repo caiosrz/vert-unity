@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VertUnity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="converter">
+        <h1>VertUnity</h1>
+        <input type="number" id="inputValue" placeholder="Digite o valor" required>
+
+        <select id="fromUnit" onchange="updateToUnitOptions()">
+            <option value="meters">Metros</option>
+            <option value="kilometers">Quilômetros</option>
+            <option value="miles">Milhas</option>
+        </select>
+
+        <select id="toUnit">
+            <option value="meters">Metros</option>
+            <option value="kilometers">Quilômetros</option>
+            <option value="miles">Milhas</option>
+        </select>
+
+        <button onclick="convert()">
+            <i class="fas fa-exchange-alt"></i> Converter
+        </button>
+
+        <p id="result">Valor convertido:</p>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
